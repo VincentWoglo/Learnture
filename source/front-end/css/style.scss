@@ -1,0 +1,304 @@
+@import "colors";
+@import "fonts";
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: $Size__16px;
+    font-family: $Rubik__sans-serif;
+    font-weight: $Weight__regular;
+}
+header{
+    nav{
+        width: 90%;
+        margin: auto;
+        margin-top: 2em;
+        .navigation{
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                .left__nav{
+                    display: flex;
+                    align-items: center;
+                    .logo__wrapper{
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        .logo__text{
+                            margin-left: 1em;
+                            font-size: $Size__20px;
+                            font-weight: $Weight__bold;
+                        }
+                    }
+                    .menu{
+                        display: flex;
+                        margin-left: 30px;
+                        li{
+                            list-style-type: none;
+                            margin-left: 42px;
+                            color: $Dark__grey;
+                            font-weight: $Weight__regular;
+                            font-size: $Size__16px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .right__nav{
+                    display: flex;
+                    align-items: center;
+                    .search__icon{
+                        cursor: pointer;
+                        #search{
+                            color: $Dark__grey;
+                            font-weight: 600;
+                        }
+                        .fa, .fas {
+                            font-size: 25px;
+                        }
+                    }
+                    form{
+                        input{
+                            border: 1px $Navy__blue solid;
+                            padding: 10px;
+                            width: 20vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.hero{
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    background-color: $Light__grey;
+    height: 500px;
+    .container{
+        transform: translate(5.5%, 75%);
+        width: 90%;
+        .left__hero{
+            .title{
+                font-size: $Size__34px;
+                width: 400px;
+                font-weight: $Weight__medium;
+            }
+            .description{
+                margin-top: 1em;
+                font-size: $Size__16px;
+            }
+            .action__btn{
+                padding: 13px 24px;
+                border: 1px $Navy__blue solid;
+                background-color: $Navy__blue;
+                color: $White;
+                cursor: pointer;
+                font-weight: $Weight__medium;
+                margin-top: 1.5em;
+            }
+        }
+    }
+}
+
+main{
+    .tutorial{
+        width: 90%;
+        margin: auto;
+        margin-top: 4em;
+        .container{
+            .title{
+                font-size: $Size__24px;
+                color: $Black__2;
+                font-weight: $Weight__medium;
+            }
+            .card__wrapper{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1.5em;
+                .card{
+                    width: 302px;
+                    .img{
+                        background-color: $Light__grey;
+                        width: 100%;
+                        height: 169px;
+                    }
+                    .card__texts{
+                        .card__btn__link{
+                            color: $Navy__blue;
+                            text-decoration: none;
+                            margin-top: 5.4em;
+                            display: block;
+                            width: 65px;
+                            height: 20px;
+                            position: relative;
+                            top:-70px;
+                            #chevron__right{
+                                margin-left: .2em;
+                            }
+                            &:hover{
+                                #chevron__right{
+                                    margin-left: .4em;
+                                }
+                            }
+                            
+                        }
+                        .card__title{
+                            font-size: $Size__20px;
+                            margin-top: 1em;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;  
+                            overflow: hidden;
+                            font-weight: $Weight__medium;
+                        }
+                        .card__description{
+                            margin-top: .4em;
+                            line-height: 1.6;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .email__list{
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 90%;
+            margin: auto;
+            height: 100px;
+            background-color: $Light__grey;
+            .join__text{
+                margin-top: .5em;
+            }
+            form{
+                margin-top: .5em;
+                .join__input{
+                    padding: 10px;
+                    width: 20vw;
+                }
+                .join__btn{
+                    padding: 10px 30px;
+                    border: 1px $Navy__blue solid;
+                    background-color: $Navy__blue;
+                    color: $White;
+                    font-size: $Size__16px;
+                }
+            }
+        }
+    }
+
+    .quad{
+        margin-top: 5em;
+        .container{
+            width: 90%;
+            margin: auto;
+            .quad__1{
+                display: flex;
+                align-items: center;
+                .left{
+                    width:70%;
+                    height: 343px;
+                    background-color: $Light__grey;
+                }
+                .right{
+                    padding: 0px 50px;
+                    .title{
+                        margin-top: 2em;
+                        font-weight: $Weight__medium;
+                    }
+                    p{
+                        color: $Dark__grey;
+                        line-height: 1.6;
+                        margin-top: 1em;
+                    }
+                }
+                .quad__btn__link{
+                    color: $Navy__blue;
+                    text-decoration: none;
+                    margin-top: 5.5em;
+                    display: block;
+                    width: 115px;
+                    height: 20px;
+                    position: relative;
+                    top: -70px;
+                    &:hover{
+                        #chevron__right{
+                            margin-left: .3em;
+                        }
+                    }
+                }
+            }
+            .quad__2{
+                display: flex;
+                align-items: center;
+                margin-top: 2em;
+                flex-direction: row-reverse;
+                .left{
+                    width:70%;
+                    height: 343px;
+                    background-color: $Light__grey;
+                }
+                
+                .right{
+                    padding: 0px 50px;
+                    .title{
+                        margin-top: 3em;
+                        font-weight: $Weight__medium;
+                    }
+                    p{
+                        color: $Dark__grey;
+                        color: $Dark__grey;
+                        line-height: 1.6;
+                        margin-top: 1em;
+                    }
+                }
+                .quad__btn__link{
+                    color: $Navy__blue;
+                    text-decoration: none;
+                    margin-top: 5em;
+                    display: block;
+                    width: 115px;
+                    height: 20px;
+                    position: relative;
+                    top: -70px;
+                    &:hover{
+                        #chevron__right{
+                            margin-left: .3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $Light__grey;
+    padding: 20px;
+    margin-top: 5em;
+    .container{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo__wrapper{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .logo__text{
+                margin-left: 1em;
+                font-size: $Size__20px;
+                font-weight: $Weight__bold;
+            }
+        }
+    }
+}
