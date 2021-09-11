@@ -23,3 +23,10 @@ Admin
 
 Database Design Resources
 - (https://www.guru99.com/database-design.html)
+
+
+Change Database Connection Password
+
+
+Moving file into another folder resources
+- https://www.php.net/manual/en/function.move-uploaded-file.php

@@ -154,6 +154,8 @@ main .tutorial .container .card__wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 1.5em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .tutorial .container .card__wrapper .card {
@@ -198,6 +200,10 @@ main .tutorial .container .card__wrapper .card .card__texts .card__title {
 main .tutorial .container .card__wrapper .card .card__texts .card__description {
   margin-top: .4em;
   line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 main .email__list .container {
