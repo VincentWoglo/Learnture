@@ -1,0 +1,13 @@
+{
+    "autoload":{
+        "psr-4": {
+            "Src\\": "Src",
+            "BackEnd\\": "BackEnd",
+            "CurrentFolder\\": "./",
+            "Controller\\": "Controller"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.3"
+    }
+}
