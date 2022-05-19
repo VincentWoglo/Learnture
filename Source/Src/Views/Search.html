@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Views/Style/Css/Search.css">
+    <title>Search</title>
+</head>
+<body>
+    <div class="Container">
+        <main class="Main">
+            <section class="SearchInputSection">
+                <div class="Container">
+                    <form action="Search.php?page=1" class="SearchForm" method="POST" autocomplete="off">
+                        <input type="text" class="SearchInput" name="search__input" value="{{SearchQuery}}"><input type="submit" class="SearchSubmit" value="Search">
+                    </form>
+                </div>
+            </section>
+            <section class="SearchResultsSection">
+                <div class="Container">
+                    <p class="NumberOfResultsFound">
+                        {{ResultsFoundForDisplayResult}} Results found
+                    </p>
+                    <div class="SearchResultWrapper">
+                        {% for DisplayResult in DisplayResults %}
+                            <div class="SearchResultComponents">
+                                <h1 class="SearchTitle">{{DisplayResult.Title}}</h1>
+                                <p class="SearchDescription">{{DisplayResult.Description}}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

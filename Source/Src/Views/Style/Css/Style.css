@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.container .navigation {
+  width: 100%;
+}
+.container .navigation nav {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 20px #dfdfdf;
+          box-shadow: 0px 5px 20px #dfdfdf;
+}
+.container .navigation nav .container {
+  width: 87%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.container .navigation nav .container .logo {
+  font-size: 29.12px;
+  color: #013281;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container .navigation nav .container .menu {
+  display: none;
+}
+.container .navigation nav .container .menu .nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 127px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .navigation nav .container .menu .nav__menu li {
+  list-style-type: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+.container .navigation nav .container .menu .nav__menu .hr {
+  width: 0px;
+  height: 29px;
+  border: 1px black solid;
+}
+.container .hero {
+  width: 87%;
+  margin: auto;
+}
+.container .hero main .container {
+  margin-top: 196px;
+}
+.container .hero main .container .title {
+  width: 564px;
+  font-size: 47.12px;
+  text-align: center;
+  margin: auto;
+  line-height: 1.3;
+}
+.container .hero main .container .description {
+  width: 618px;
+  text-align: center;
+  margin: auto;
+  margin-top: 21px;
+  line-height: 1.7;
+  color: #868686;
+}
+.container .hero main .container form {
+  margin: auto;
+  width: 617px;
+  margin-top: 36px;
+}
+.container .hero main .container form .search__input {
+  width: 498px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 25px;
+  background-color: #ECECEC;
+  border: 1px #ECECEC solid;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.container .hero main .container form .search__input:focus {
+  outline: none;
+}
+.container .hero main .container form .search__btn {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-weight: 500;
+  background-color: #013281;
+  border: 1px #013281 solid;
+  color: #fff;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.container .hero main .container form .search__btn:focus {
+  outline: none;
+}
+.container .recently__seaches {
+  width: 87%;
+  margin: auto;
+  margin-top: 146px;
+}
+.container .recently__seaches main .container .recently__searched {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+}
+.container .recently__seaches main .container .recents {
+  margin-top: 21px;
+}
+.container .recently__seaches main .container .recents .catergories .category__buttons button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ECECEC;
+  border: 1px #ECECEC solid;
+}
+.container .recently__seaches main .container .recents .catergories .category__buttons button:nth-child(2), .container .recently__seaches main .container .recents .catergories .category__buttons button:nth-child(3) {
+  margin-left: 20px;
+}
+.container .recently__seaches main .container .recents .catergories .categories__display {
+  margin-top: 36px;
+}
+.container .recently__seaches main .container .recents .catergories .categories__display .programing .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 870px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .recently__seaches main .container .recents .catergories .categories__display .programing .container .card {
+  width: 270px;
+  height: 130px;
+  border-radius: 5px;
+}
+.container .recently__seaches main .container .recents .catergories .categories__display .programing .container .card .img__wrapper {
+  background-color: #ECECEC;
+}
+.container .recently__seaches main .container .recents .catergories .categories__display .programing .container .card .img__wrapper img {
+  width: 270px;
+  height: 130px;
+}

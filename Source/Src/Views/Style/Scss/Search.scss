@@ -1,0 +1,82 @@
+@use "Color";
+@use "Font";
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: Color.$white;
+    color: Color.$black;
+    font-family: Font.$roboto;
+    font-size: Font.$font-size__18px;
+}
+.Container{
+    .Main{
+        .SearchInputSection{
+            .Container{
+                width: 87%;
+                margin: auto;
+                aside{
+                    float: right;
+                }
+                .SearchForm{
+                    width: 626px;
+                    .SearchInput{
+                        padding: 16px 32px;
+                        border-bottom-left-radius: 10px;
+                        border-top-left-radius: 10px;
+                        width: 100%;
+                        border: 1px Color.$blue solid;
+                        box-shadow: 0px 10px 20px Color.$border__grey;
+                    }
+                    .SearchSubmit{
+                        padding: 16px 24px;
+                        border-bottom-right-radius: 10px;
+                        border-top-right-radius: 10px;
+                        position: absolute;
+                        color: Color.$white;
+                        background-color: Color.$blue;
+                        font-weight: Font.$font__weight__bold;
+                        border: 1px Color.$blue solid;
+                        box-shadow: 0px 10px 20px Color.$border__grey;
+                    }
+                }
+            }
+        }
+        .SearchResultsSection{
+            margin-top: 80px;
+            .Container{
+                width: 87%;
+                margin: auto;
+                .NumberOfResultsFound{
+                    color: Color.$blue__grey;
+                    font-size: Font.$font-size__18px;
+                    margin-top: 32px;
+                }
+                .SearchResultWrapper{
+                    width: 60%;
+                    margin-top: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 16px;
+                    .SearchResultComponents{
+                        .SearchTitle{
+                            color: Color.$blue;
+                            font-size: Font.$font-size__20px;
+                            font-weight: Font.$font__weight__medium;
+                        }
+                        .SearchDescription{
+                            font-size: Font.$font-size__18px;
+                            font-weight: Font.$font__weight__regular;
+                            color: Color.$blue__grey;
+                            margin-top: 8px;
+                            max-width: 1000px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

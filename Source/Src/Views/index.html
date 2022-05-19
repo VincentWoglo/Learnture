@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Views/Style/Css/Style.css">
+    <title>Learnture</title>
+</head>
+<body>
+    <div class="container">
+        <section class="navigation">
+            <nav>
+                <div class="container">
+                    <div class="logo">Learnture</div>
+                    <div class="menu">
+                        <ul class="nav__menu">
+                            <li class="log__in">Login</li>
+                            <div class="hr"></div>
+                            <li class="sign__up">SignUp</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="hero">
+            <main>
+                <div class="container">
+                    <h1 class="title">
+                        Get Fast Solutions To Your Coding Project {{ name }} {{ test }}
+                    </h1>
+                    <p class="description">
+                        It’s hard searching websites for a coding problem that shouldn’t take long to fix. So we decided to fix that. Search a problem below to get started
+                    </p>
+                    <form action="Search.php?page=1" class="search" method="POST" autocomplete="off">
+                        <input type="text" class="search__input" name="search__input" placeholder="Search Solutions"><input type="submit" class="search__btn" value="Search">
+                    </form>
+                </div>
+            </main>
+        </section>
+
+        <section class="recently__seaches">
+            <main>
+                <div class="container">
+                    <p class="recently__searched">
+                        Recently Visited
+                    </p>
+                    <div class="recents">
+                        <div class="catergories">
+
+                            <div class="categories__display">
+                                <div class="programing">
+                                    <div class="container">
+                                        <div class="card">
+                                            <div class="img__wrapper">
+                                                <img src="./Assets/Images/unsplash_B3l0g6HLxr8.png" alt="" class="img">
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="img__wrapper">
+                                                <img src="./Assets/Images/unsplash_ipARHaxETRk.png" alt="" class="img">
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="img__wrapper">
+                                                <img src="./Assets/Images/unsplash_i25aqE_YUZs.png" alt="" class="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui__ux">
+                                    <!--cards goes here-->
+                                </div>
+                                <div class="devops">
+                                    <!--cards goes here-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+</body>
+</html>
