@@ -18,4 +18,3 @@
 ###Routing
 - [] Add 404 page if page does not exist
 - [] Check if the site is running on SSL
-Token : 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
