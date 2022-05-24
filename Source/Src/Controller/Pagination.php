@@ -33,6 +33,7 @@
                 if($ArrayOrganized[$Start]["score"] === $hg[$Start]){
                     $Queue->push(
                         array(
+                            "id" => $ArrayOrganized[$Start]["id"],
                             "title"=>$ArrayOrganized[$Start]["title"],
                             "description"=>$ArrayOrganized[$Start]["description"],
                             "category"=>$ArrayOrganized[$Start]["category"],
@@ -49,13 +50,14 @@
             
             for($Low = 0; $Low < count($ArrayQueue); $Low++){
                 array_push($FinalArrayQueue, [
+                    "Id" => $ArrayQueue[$Low]["id"],
                     "Title" => $ArrayQueue[$Low]["title"],
                     "Description" => $ArrayQueue[$Low]["description"],
                     "Category" => $ArrayQueue[$Low]["category"],
                     "Date" => $ArrayQueue[$Low]["date"]
                 ]);
             }
-
+            //return var_dump($ArrayQueue);
             return $FinalArrayQueue;
             //$url = $_SERVER['REQUEST_URI'];
             //$url = explode("/", $url);

@@ -13,7 +13,4 @@ use Src\Controller\Cache;
     echo $twig->render('index.html', [
         'test' => $Function
     ]);
-    echo $twig->render('Search.html', [
-        'test' => $Function
-    ]);
 ?>

@@ -42,7 +42,7 @@ body {
   cursor: pointer;
 }
 .container .navigation nav .container .menu {
-  display: none;
+  display: block;
 }
 .container .navigation nav .container .menu .nav__menu {
   display: -webkit-box;

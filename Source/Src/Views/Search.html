@@ -20,15 +20,17 @@
             <section class="SearchResultsSection">
                 <div class="Container">
                     <p class="NumberOfResultsFound">
-                        {{ResultsFoundForDisplayResult}} Results found
+                        {{ResultsFoundForDisplayResult}} Results found {{CountQueryResults}}
                     </p>
                     <div class="SearchResultWrapper">
                         {% for DisplayResult in DisplayResults %}
                             <div class="SearchResultComponents">
-                                <h1 class="SearchTitle">{{DisplayResult.Title}}</h1>
+                                <a href="Article.php?Article={{DisplayResult.Id}}"><h1 class="SearchTitle">{{DisplayResult.Title}}</h1></a>
                                 <p class="SearchDescription">{{DisplayResult.Description}}</p>
                             </div>
                         {% endfor %}
+
+                        {{Pagination}}
                     </div>
                 </div>
             </section>

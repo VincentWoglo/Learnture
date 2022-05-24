@@ -5,6 +5,9 @@ require('../vendor/autoload.php');
 //Queue class autoload
 require_once('./Libraries/vendor/autoload.php');
 
+$loader = new \Twig\Loader\FilesystemLoader('./Views');
+$twig = new \Twig\Environment($loader);
+
 use Src\Controller\GetBrowser;
 use BackEnd\Model\Connection;
 use BackEnd\Model\Articles;
@@ -24,15 +27,21 @@ $Article = new Articles();
 $QueryResults = $Article->getArticle($SearchQuery);
 
 if(count($QueryResults) === 0){
+    //Send this data into Search.html file
+    //echo $twig->render("")
+    //{% if online == false %}
+    //<p>Our website is in maintenance mode. Please, come back later.</p>
+    //{% endif %}
     echo "No results for: ".$SearchQuery;
     echo "<input type='button' value='Request Tutorial'>";
+    //return $SearchQuery;
 
     //tell user there are no results for the query
     //give user prompt to request a tutorial
 }
 else{
 $OrganizeArray = new OrganizeArray;
-$ArrayOrganized = $OrganizeArray->ArrayOrganized($QueryResults);
+$ArrayOrganized = $OrganizeArray->ArrayOrganized($QueryResults); 
 //Getting the biggest score
 $BiggestScore = new BiggestScore;
 $BiggestScore->GetBiggestScore($ArrayOrganized);
@@ -71,16 +80,19 @@ $Pagination = new Pagination;
 //Storing orders score into Queue
 $ArrayQueue = $Pagination->PageIntoQueue($ArrayOrganized, $hg);
 //displaying the pagination
-$Pagination->Page($ArrayQueue, $_GET['page'], 2);
-}
 
 
+//var_dump($ArrayQueue);
 //Sending Files To Search View
 //Display items in the Queue
 $DisplayResults = $Pagination->DisplayQueue($ArrayQueue);
-$loader = new \Twig\Loader\FilesystemLoader('./Views');
-$twig = new \Twig\Environment($loader);
-echo $twig->render('Search.html', [
-    'DisplayResults' => $DisplayResults
+echo $twig->render("Search.html", [
+    "DisplayResults" => $DisplayResults,
+    "ResultsFoundForDisplayResult" => count($DisplayResults),
+    "SearchQuery" => $SearchQuery,
+    //"Pagination" => "$Pagination->Page($ArrayQueue, $_GET['page'], 2)"
 ]);
+
+//$Pagination->Page($ArrayQueue, $_GET['page'], 2);
+}
 ?>
