@@ -2,8 +2,11 @@
 
 ### Technologies Used:
 - PHP
-- HTML&CSS
+- SCSS
 - TWIG
+- COMPOSER
+- GULP
+- JAVASCRIPT
 <br>
 <br>
 <br>

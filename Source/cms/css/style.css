@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.error {
+  background-color: #183059;
+  padding: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container header {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+}
+
+.container header .navigation {
+  background-color: #183059;
+  color: #FFFFFF;
+  height: 100vh;
+  width: 100%;
+}
+
+.container header .navigation .container .wrapper {
+  width: 100%;
+}
+
+.container header .navigation .container .wrapper .logo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 20px;
+}
+
+.container header .navigation .container .wrapper .logo__wrapper .logo_text {
+  margin-left: .5em;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.container header .navigation .container .wrapper .menu__list li {
+  list-style-type: none;
+  padding: 13px 10px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.container main {
+  width: 85%;
+  -webkit-transform: translate(20%);
+          transform: translate(20%);
+}
+
+.container main .container {
+  width: 100%;
+}
+
+.container main .container .panel {
+  height: 100vh;
+  width: 100%;
+}
+
+.container main .container .panel .display__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container main .container .panel .display__article .container .wrapper {
+  background-color: rgba(153, 153, 153, 0.267);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container main .container .panel .display__article .container .wrapper h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container main .container .panel .display__article .container .wrapper input {
+  padding: 10px;
+}
+
+.container main .container .panel .container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+  margin-top: 5em;
+}
+
+.container main .container .panel .container .title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.container main .container .panel .container .article__input {
+  margin-top: 2em;
+}
+
+.container main .container .panel .container .article__input .article__name__input {
+  padding: 10px;
+  width: 50%;
+  border: 1px #183059 solid;
+}
+
+.container main .container .panel .container .article__input label {
+  display: block;
+  margin-top: 2em;
+}
+
+.container main .container .panel .container .article__input .article__description {
+  margin-top: 0em;
+  width: 50%;
+  border: 1px #183059 solid;
+  padding: 10px;
+}
+
+.container main .container .panel .container .article__input select {
+  padding: 10px;
+  border: 1px #183059 solid;
+  margin-top: 2em;
+}
+
+.container main .container .panel .container .article__input #cke_text__editor {
+  margin-top: 2em;
+}
+
+.container main .container .panel .container .article__input .publish__button {
+  padding: 10px 40px;
+  border: 1px #183059 solid;
+  background-color: #FFFFFF;
+  color: #183059;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 4em;
+  -webkit-box-shadow: inset 0 0 0 0 #183059;
+          box-shadow: inset 0 0 0 0 #183059;
+  display: inline-block;
+}
+
+.container main .container .panel .container .article__input .publish__button:hover {
+  -webkit-box-shadow: inset 125px 0 0 0 #183059;
+          box-shadow: inset 125px 0 0 0 #183059;
+  color: #FFFFFF;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.login {
+  margin-top: 10em;
+}
+
+.login .container {
+  margin: auto;
+  background-color: #e1e1e1;
+  width: 500px;
+  padding: 50px 0px;
+}
+
+.login .container form {
+  margin: auto;
+}
+
+.login .container form .title {
+  margin-bottom: 1.5em;
+  font-size: 24px;
+  font-weight: 500;
+  color: #183059;
+}
+
+.login .container form input {
+  padding: 10px;
+  width: 324px;
+}
+
+.login .container form .password__input, .login .container form .submit__input {
+  margin-top: 2em;
+}
+
+.login .container form .submit__input {
+  padding: 10px;
+  width: 324px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/Css/Article.css?v=2">
+    <title>{{QueryResults.title}} - Learnture</title>
+</head>
+<body>
+    <div class="Container">
+        <main>
+            <section class="Title">
+                <h1 class="ArticleTitle">{{QueryResults.title}}</h1>
+                <p class="ArticleDDdescription">{{QueryResults.description}}</p>
+                <p class="ArticleWrittenBy">Written by:{{QueryResults.written_by}}</p>
+                <p class="ArticleDate">{{QueryResults.date}}</p>
+            </section>
+            <section class="Article">
+                {{'\"'BodyText'\"'}}
+            </section>
+        </main>
+    </div>
+</body>
+</html>

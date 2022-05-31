@@ -21,7 +21,6 @@ $GetBrowser = new GetBrowser();
 $GetBrowser->GetBrowserClient();
 //$GetBrowser->GetBrowserLang();
 
-
 $SearchQuery = $_REQUEST['search__input'];
 $Article = new Articles();
 $QueryResults = $Article->getArticle($SearchQuery);
@@ -86,10 +85,10 @@ $ArrayQueue = $Pagination->PageIntoQueue($ArrayOrganized, $hg);
 //Sending Files To Search View
 //Display items in the Queue
 $DisplayResults = $Pagination->DisplayQueue($ArrayQueue);
-echo $twig->render("Search.html", [
+echo $twig->render("Search.html.twig", [
     "DisplayResults" => $DisplayResults,
     "ResultsFoundForDisplayResult" => count($DisplayResults),
-    "SearchQuery" => $SearchQuery,
+    "SearchQuery" => $SearchQuery
     //"Pagination" => "$Pagination->Page($ArrayQueue, $_GET['page'], 2)"
 ]);
 

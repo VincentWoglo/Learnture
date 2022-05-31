@@ -54,6 +54,7 @@
                     "Title" => $ArrayQueue[$Low]["title"],
                     "Description" => $ArrayQueue[$Low]["description"],
                     "Category" => $ArrayQueue[$Low]["category"],
+                    "written_by" => $ArrayQueue[$Low]["written_by"],
                     "Date" => $ArrayQueue[$Low]["date"]
                 ]);
             }

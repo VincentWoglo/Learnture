@@ -1,0 +1,174 @@
+@import "colors";
+@import "fonts";
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: $Size__16px;
+    font-family: $Rubik__sans-serif;
+    font-weight: $Weight__regular;
+}
+.error{
+    background-color: $Navy__blue;
+    padding: 15px;
+    text-align: center;
+    color: $White;
+}
+.container{
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+header{
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    .navigation{
+        background-color: $Navy__blue;
+        color: $White;
+        height: 100vh;
+        width: 100%;
+        .container{
+            .wrapper{
+                width: 100%;
+                .logo__wrapper{
+                    display: flex;
+                    align-items: center;
+                    padding: 25px 20px;
+                    .logo_text{
+                        margin-left: .5em;
+                        font-weight: $Weight__medium;
+                        font-size: $Size__20px;
+                    }
+                }
+                .menu__list{
+                    
+                    li{
+                        list-style-type: none;
+                        padding: 13px 10px;
+                        padding-left: 30px;
+                        cursor: pointer;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+main{
+    width: 85%;
+    transform: translate(20%);
+    .container{
+        width: 100%;
+    .panel{
+        height: 100vh;
+        width: 100%;
+        .display__article{
+            display: flex;
+            .container{
+                .wrapper{
+                    background-color: rgba(153, 153, 153, 0.267);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                h1{
+                    font-size: $Size__20px;
+                    font-weight: $Weight__medium;
+                }
+                input{
+                    padding: 10px;
+
+                }
+            }
+        }
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: $White;
+            margin-top: 5em;
+            .title{
+                font-size: $Size__24px;
+                font-weight: $Weight__medium;
+            }
+            .article__input{
+                margin-top: 2em;
+                .article__name__input{
+                    padding: 10px;
+                    width: 50%;
+                    border: 1px $Navy__blue solid;
+                }
+                label{
+                    display: block;
+                    margin-top: 2em;
+                }
+                .article__description{
+                    margin-top: 0em;
+                    width: 50%;
+                    border: 1px $Navy__blue solid;
+                    padding: 10px;
+                }
+                select{
+                    padding: 10px;
+                    border: 1px $Navy__blue solid;
+                    margin-top: 2em;
+                }
+                #cke_text__editor{
+                    margin-top: 2em;
+                }
+                .publish__button{
+                    padding: 10px 40px;
+                    border: 1px $Navy__blue solid;
+                    background-color: $White;
+                    color: $Navy__blue;
+                    font-weight: $Weight__medium;
+                    cursor: pointer;
+                    margin-top: 4em;
+                    box-shadow: inset 0 0 0 0 $Navy__blue;
+                    display: inline-block;
+                    &:hover{
+                        box-shadow: inset 125px 0 0 0 $Navy__blue;
+                        color: $White;
+                        transition: ease-out 0.4s;
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+}
+
+.login{
+    margin-top: 10em;
+    .container{
+        margin: auto;
+        background-color:#e1e1e1;
+        width: 500px;
+        padding: 50px 0px;
+        form{
+            margin: auto;
+            .title{
+                margin-bottom: 1.5em;
+                font-size: $Size__24px;
+                font-weight: $Weight__medium;
+                color: $Navy__blue;
+            }
+            input{
+                padding: 10px;
+                width: 324px;
+            }
+            .password__input, .submit__input{
+                margin-top: 2em;
+            }
+            .submit__input{
+                padding: 10px;
+                width: 324px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@
             
             //https://stackoverflow.com/questions/40104408/how-can-i-detect-the-last-visited-page-with-php
             return $hello = "This is a test or maybe not";
+            //https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching
         }
     }
 ?>
